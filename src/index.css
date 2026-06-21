@@ -1,0 +1,64 @@
+/* CSS Custom Properties */
+:root {
+  --accent: #8EADD5;
+  --light:#F6F6F6;
+}
+
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Nav link hover */
+.navbar .nav-link:hover {
+  color: var(--accent) !important;
+}
+
+/* Dot navigation */
+.slider-dot {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  border-radius: 9999px;
+  background-color: transparent;
+  border: 2px solid var(--accent);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+  outline: none;
+  appearance: none;
+}
+
+.slider-dot.active {
+  background-color: var(--accent) !important;
+  border-color: var(--accent) !important;
+  width: 20px;
+  height: 20px;
+}
+
+
+@media (min-width: 768px) {
+  .w-md-auto {
+    width: auto !important;
+  }
+}
+
+.rounded-4 {
+  border-radius: 1rem !important;
+}
+.rounded-20{
+  border-radius: 20px;
+}
