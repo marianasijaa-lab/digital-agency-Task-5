@@ -6,18 +6,11 @@ interface TestimonialCardProps {
 
 const TestimonialCard = ({ testimonial }: TestimonialCardProps) => {
   return (
-    <div
-      className="h-100 px-4 rounded-20 text-center bg-light"
-      style={{
-        border: 'none',
-        paddingBottom: '38px',
-        paddingTop: '38px',
-      }}
-    >
+    <div className="h-100 px-4 py-5 rounded-20 text-center bg-light">
       {/* Avatar */}
       <div className="d-flex justify-content-center mb-0">
         <div
-          className="bg-light rounded-circle d-flex align-items-center justify-content-center overflow-hidden border border-1"
+          className="bg-light rounded-circle d-flex align-items-center justify-content-center overflow-hidden border"
           style={{ width: 100, height: 100 }}
         >
           <img
@@ -34,21 +27,19 @@ const TestimonialCard = ({ testimonial }: TestimonialCardProps) => {
 
       {/* Name */}
       <p
-        className="mb-3"
-        style={{ color: '#272D38', fontSize: '1.125rem', lineHeight: 1.7, fontWeight: 400 }}
+        className="mb-3 fw-normal lh-lg"
+        style={{ color: '#272D38', fontSize: '1.125rem' }}
       >
         {testimonial.name}
       </p>
 
       {/* Text */}
       <p
-        className="mb-1"
+        className="mb-1 fw-light mx-auto"
         style={{
           color: '#272D38',
           lineHeight: 1.3,
-          fontSize:  `clamp(0.1rem, 3vw, 0.857rem) `,
-          fontWeight: 300,
-          textAlign: 'center',
+          fontSize: 'clamp(0.1rem, 3vw, 0.857rem)',
           maxWidth: '280px',
         }}
       >

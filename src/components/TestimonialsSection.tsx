@@ -4,38 +4,24 @@ import TestimonialSlider from './TestimonialSlider'
 
 const TestimonialsSection = () => {
   return (
-    <section id="testimonials" className="py-1">
+    <section id="testimonials" className="py-4">
       <Container>
         <div className="text-center mb-4">
           <p
-            className="mb-1"
-            style={{
-              color: '#272D38',
-              fontSize:  `clamp(0.65rem, 2.5vw, 1rem) `,
-              textTransform: 'uppercase',
-              lineHeight: 1.7,
-              fontWeight: 400,
-            }}
+            className="mb-1 fw-normal text-uppercase lh-lg"
+            style={{ color: '#272D38', fontSize: 'clamp(0.65rem, 2.5vw, 1rem)' }}
           >
             Testimonials
           </p>
           <h2
             className="fw-bold"
-            style={{
-              color: '#272D38',
-              fontSize: 'clamp(1.5rem, 3.5vw, 3rem)',
-              fontWeight: 700,
-              lineHeight: 1,
-            }}
+            style={{ color: '#272D38', fontSize: 'clamp(1.5rem, 3.5vw, 3rem)', lineHeight: 1 }}
           >
-            {/* للشاشات الكبيرة (md فأكبر) */}
             <span className="d-none d-md-block">
-              Read What Other 
+              Read What Other
               <br />
               Have To Say
             </span>
-
-            {/* للشاشات الصغيرة (أقل من md) */}
             <span className="d-block d-md-none">
               Read What Other Have
               <br />

@@ -1,7 +1,6 @@
 /* CSS Custom Properties */
 :root {
   --accent: #8EADD5;
-  --light:#F6F6F6;
 }
 
 
@@ -13,7 +12,6 @@ body {
   margin: 0;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  font-style: normal;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -50,15 +48,6 @@ html {
 }
 
 
-@media (min-width: 768px) {
-  .w-md-auto {
-    width: auto !important;
-  }
-}
-
-.rounded-4 {
-  border-radius: 1rem !important;
-}
 .rounded-20{
   border-radius: 20px;
 }

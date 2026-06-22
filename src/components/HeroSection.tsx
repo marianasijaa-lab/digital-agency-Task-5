@@ -5,37 +5,28 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      style={{
-        paddingTop: '2rem',
-        paddingBottom: '3rem',
-        minHeight: '90vh',
-        display: 'flex',
-        alignItems: 'center',
-      }}
+      className="py-5 d-flex align-items-center"
+      style={{ minHeight: '90vh' }}
     >
       <Container>
         <Row className="align-items-center g-4">
-          {/* On mobile*/}
-          <Col xs={12} md={6} className="order-1 order-md-1 text-center text-md-start ">
+          <Col xs={12} md={6} className="text-center text-md-start">
             <h1
+              className="fw-bold"
               style={{
-                fontWeight: 700,
                 fontSize: 'clamp(1.7rem, 5vw, 4rem)',
                 lineHeight: 1.1,
                 color: '#272D38',
               }}
             >
-              {/* للشاشات الكبيرة (md فأكبر) */}
-              <span className="d-none d-md-block fw-bold ">
+              <span className="d-none d-md-block">
                 Building Digital
                 <br />
-                Products, Brands 
+                Products, Brands
                 <br />
                 &amp; Experience
               </span>
-
-              {/* للشاشات الصغيرة (أقل من md) */}
-              <span className="d-block d-md-none fw-bold ">
+              <span className="d-block d-md-none">
                 Building Digital
                 <br />
                 Products,Brands &amp;
@@ -44,36 +35,27 @@ const HeroSection = () => {
               </span>
             </h1>
             <p
-              className="mt-3 mb-4"
-              style={{
-                color: '#272D38',
-                fontSize: 'clamp(0.70rem, 2.5vw, 1.2rem)',
-                fontWeight: 400,
-                lineHeight: 1.7,
-                paddingTop: '8px',
-                paddingBottom: '8px',
-              }}
+              className="mt-3 mb-4 py-2 fw-normal lh-lg"
+              style={{ color: '#272D38', fontSize: 'clamp(0.70rem, 2.5vw, 1.2rem)' }}
             >
               Digital Agency Is Your Online Team Mangement Tool That Easy And Prompt
             </p>
-           <Button
+            <Button
               href="#contact"
+              className="fw-semibold rounded-2 "
               style={{
                 backgroundColor: '#8EADD5',
                 border: 'none',
-                borderRadius: '8px',
                 padding: 'clamp(0.3rem, 0.5vw + 0.3rem, 0.7rem) clamp(0.7rem, 3vw + 0.5rem, 1.8rem)',
                 fontSize: 'clamp(0.75rem, 1.2vw + 0.4rem, 1rem)',
-                fontWeight: 600,
                 color: '#fff',
-               
               }}
             >
               CONTACT US
             </Button>
           </Col>
-          {/* On mobile */}
-          <Col xs={12} md={6} className="order-2 order-md-2 text-center">
+
+          <Col xs={12} md={6} className="text-center">
             <img
               src={heroImage}
               alt="Team working on digital products"

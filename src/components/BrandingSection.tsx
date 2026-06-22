@@ -5,37 +5,20 @@ import arrowMobile from '../assets/Arrow 2.png'
 
 const BrandingSection = () => {
   return (
-    <section
-      id="about"
-      style={{
-        paddingTop: '4rem',
-        paddingBottom: '4rem',
-        background: '#ffffff',
-      }}
-    >
+    <section id="about" className="py-5 bg-white">
       <Container>
-        {/*  Mobile */}
+        {/* Mobile */}
         <div className="d-block d-md-none text-center">
           <h2
             className="fw-bold mb-3"
-            style={{
-              color: '#272D38',
-              fontSize: 'clamp(1.8rem, 7vw, 2.5rem)',
-              lineHeight: 1,
-              fontWeight: 700,
-            }}
+            style={{ color: '#272D38', fontSize: 'clamp(1.8rem, 7vw, 2.5rem)', lineHeight: 1 }}
           >
             Branding &amp; Design
             <br />System
           </h2>
           <p
-            className="mb-4"
-            style={{
-              color: '#272D38',
-              lineHeight: 1.7,
-              fontSize: 'clamp(0.65rem, 2.5vw, 1rem)',
-              fontWeight: 400,
-            }}
+            className="mb-4 lh-lg fw-normal"
+            style={{ color: '#272D38', fontSize: 'clamp(0.65rem, 2.5vw, 1rem)' }}
           >
             Commonly Used In The Graphic, Print &amp; Publishing
             Industris For Previewing Visual Layout And Mockups
@@ -53,7 +36,7 @@ const BrandingSection = () => {
           </div>
         </div>
 
-        {/*  Desktop  */}
+        {/* Desktop */}
         <Row className="align-items-center g-4 d-none d-md-flex">
           <Col md={6} className="text-center">
             <img
@@ -66,25 +49,14 @@ const BrandingSection = () => {
           <Col md={6}>
             <h2
               className="fw-bold mb-3"
-              style={{
-                color: '#272D38',
-                fontSize: 'clamp(1.8rem, 3.5vw, 3rem)',
-                lineHeight: 1.1,
-                fontWeight: 700,
-              }}
+              style={{ color: '#272D38', fontSize: 'clamp(1.8rem, 3.5vw, 3rem)', lineHeight: 1.1 }}
             >
               Branding &amp; Design
               <br />System
             </h2>
             <p
-              className="mt-4"
-              style={{
-                color: '#272D38',
-                lineHeight: 1.7,
-                maxWidth: '380px',
-                fontSize: '1rem',
-                fontWeight: 400,
-              }}
+              className="mt-4 lh-lg fw-normal"
+              style={{ color: '#272D38', maxWidth: '380px', fontSize: '1rem' }}
             >
               Commonly Used In The Graphic, Print &amp; Publishing
               Industris For Previewing Visual Layout And Mockups
