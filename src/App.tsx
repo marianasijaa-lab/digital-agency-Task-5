@@ -13,7 +13,7 @@ function App() {
       {/* Fixed top navbar */}
       <NavbarSection />
 
-      {/* Main content — padded top to avoid navbar overlap */}
+      {/* Main content */}
       <main style={{ paddingTop: '72px' }}>
         <HeroSection />
         <CompaniesSection />
